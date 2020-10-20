@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Home</p>
+    <!--<ion-button color="dark"  routerLink="/pagina1">Pag1</ion-button>
+    <ion-button color="dark"  routerLink="/pagina2">Pag2</ion-button>-->
+    
+    <ion-item *ngFor="let el of elementos">
+      <ion-icon name={{el.icono}}></ion-icon>
+      <ion-list routerLink={{el.ruta}}>{{el.titulo}}</ion-list>
+    </ion-item>
+  </div>
+</ion-content>

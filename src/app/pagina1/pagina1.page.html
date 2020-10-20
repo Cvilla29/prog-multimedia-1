@@ -1,0 +1,20 @@
+<app-cabecera titulo="Primera pagina"></app-cabecera>
+
+<ion-content>
+    <table border="1px">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let persona of personas">
+            <th>{{persona.nombre}}</th>
+            <th>{{persona.apellido}}</th>
+            <th>{{persona.dni}}</th>
+        </tr>
+    </tbody>
+    </table>
+</ion-content>
